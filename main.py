@@ -7,7 +7,6 @@ def greeting():
 
     todos_dict = {
         '06:00': 'get up',
-
     }
 
     print("Day's tasks")
@@ -19,7 +18,6 @@ def greeting():
     btc_price = f"BTC: {round(data.get('btc_usd').get('last'), 2)}$\n"
 
     print(btc_price)
-
 
 if __name__ == '__main__':
     schedule.every(9).seconds.do(greeting)
